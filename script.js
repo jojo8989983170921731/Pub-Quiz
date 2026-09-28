@@ -3,7 +3,7 @@
 const questions = [
   // ===== EASY MODE (Questions 1-10) =====
   {
-    question: 'What country's Dream are we talking about?',
+    question: 'What country\'s Dream are we talking about?',
     options: ['The United States of America', 'Canada', 'Mexico', 'United Kingdom'],
     correct: 0,
     difficulty: 1
@@ -107,7 +107,7 @@ const questions = [
     difficulty: 2
   },
   {
-    question: 'In Arthur Miller's "Death of a Salesman," what does Willy Loman question?',
+    question: 'In Arthur Miller\'s "Death of a Salesman," what does Willy Loman question?',
     options: ['Whether success equals self-worth', 'Whether he should move', 'Whether cars are safe', 'Whether cities are better'],
     correct: 0,
     difficulty: 2
@@ -127,14 +127,14 @@ const questions = [
 
   // ===== HARDCORE MODE (Questions 21-30) =====
   {
-    question: 🔥 Which historical factor most directly undermined the promise of the Homestead Act for Black Americans and Indigenous peoples?',
-    options: ['Systemic exclusion from land claims and prior Indigenous dispossession', 'Lack of transportation to western territories', 'Language barriers preventing settlement', 'Absence of agricultural knowledge'],
+    question: '🔥 Which historical factor most directly undermined the promise of the Homestead Act for Black Americans and Indigenous peoples?',
+    options: ['Systemic exclusion from land claims and prior Indigenous dispossession', 'Lack of transportation to western territories', 'Language barriers preventing settlement', 'Absence of agriculture'],
     correct: 0,
     difficulty: 3
   },
   {
     question: '🔥 Why did discriminatory practices in mortgage lending (redlining) create persistent generational wealth gaps even after explicit bans?',
-    options: ['Missed decades of home equity accumulation and community investment', 'Affected only individual borrowers temporarily', 'Was completely reversed by the Fair Housing Act', 'Only prevented Black Americans from owning homes once'],
+    options: ['Missed decades of home equity accumulation and community investment', 'Affected only individual borrowers temporarily', 'Was completely reversed by the Fair Housing Act', 'Only prevented savings'],
     correct: 0,
     difficulty: 3
   },
@@ -146,48 +146,49 @@ const questions = [
   },
   {
     question: '🔥 What paradox did the GI Bill exemplify regarding American opportunity?',
-    options: ['Its benefits were conditioned on local segregation and discrimination', 'It was offered to all veterans equally', 'It eliminated all racial barriers immediately', 'It prevented future generations from attending college'],
+    options: ['Its benefits were conditioned on local segregation and discrimination', 'It was offered to all veterans equally', 'It eliminated all racial barriers immediately', 'It prevented future education'],
     correct: 0,
     difficulty: 3
   },
   {
     question: '🔥 In contemporary debates, why is the relationship between education and debt essential to understanding the American Dream?',
-    options: ['Education investment increasingly requires borrowing that may outweigh economic gains', 'All college graduates become wealthy', 'Student loans have no impact on long-term wealth', 'Education eliminates all financial risk'],
+    options: ['Education investment increasingly requires borrowing that may outweigh economic gains', 'All college graduates become wealthy', 'Student loans have no impact on long-term wealth', 'Everyone can afford college'],
     correct: 0,
     difficulty: 3
   },
   {
     question: '🔥 Which structural distinction reveals why "equal opportunity" differs fundamentally from "equal outcomes"?',
-    options: ['Access to chances ≠ where people ultimately end up due to compounding advantages/disadvantages', 'Opportunity and outcomes are identical', 'Only rich people have opportunities', 'Everyone achieves the same outcome automatically'],
+    options: ['Access to chances ≠ where people ultimately end up due to compounding advantages/disadvantages', 'Opportunity and outcomes are identical', 'Only rich people have opportunities', 'Opportunity guarantees success'],
     correct: 0,
     difficulty: 3
   },
   {
     question: '🔥 How does mass incarceration specifically undermine the American Dream\'s premise of self-improvement?',
-    options: ['Criminal records create barriers to employment, housing, and civic participation', 'Incarceration has no economic consequences', 'Prison sentences eliminate all debt', 'Convicted individuals can easily find housing'],
+    options: ['Criminal records create barriers to employment, housing, and civic participation', 'Incarceration has no economic consequences', 'Prison sentences eliminate all debt', 'Convicted individuals easily find jobs'],
     correct: 0,
     difficulty: 3
   },
   {
     question: '🔥 What makes the distinction between "income" and "wealth" crucial for analyzing whether the American Dream is achievable?',
-    options: ['Income is temporary earnings; wealth (assets minus debts) provides long-term security and intergenerational transfer', 'Income and wealth are the same thing', 'Wealth comes only from high income', 'Income determines wealth immediately'],
+    options: ['Income is temporary earnings; wealth (assets minus debts) provides long-term security and intergenerational transfer', 'Income and wealth are the same thing', 'Wealth comes only from wages', 'Income cannot be invested'],
     correct: 0,
     difficulty: 3
   },
   {
     question: '🔥 How did practices like redlining and discriminatory lending simultaneously limit both wealth and opportunity for generations?',
-    options: ['Prevented home ownership (primary wealth vehicle), reduced neighborhood investment, and created cycles of disadvantage', 'Only affected prices temporarily', 'Was reversed by individual effort alone', 'Created equal opportunities regardless of neighborhood'],
+    options: ['Prevented home ownership (primary wealth vehicle), reduced neighborhood investment, and created cycles of disadvantage', 'Only affected prices temporarily', 'Was reversed by individual effort', 'Increased access to mortgages'],
     correct: 0,
     difficulty: 3
   },
   {
     question: '🔥 In the context of the American Dream, why do scholars distinguish between "aspiration" and "actual mobility"?',
-    options: ['Many believe in upward mobility but structural barriers prevent it, revealing gap between ideology and reality', 'All aspirations become reality', 'Actual mobility is guaranteed regardless of circumstances', 'There is no difference between the two'],
+    options: ['Many believe in upward mobility but structural barriers prevent it, revealing gap between ideology and reality', 'All aspirations become reality', 'Actual mobility is guaranteed regardless of effort', 'Aspirations are independent of society'],
     correct: 0,
     difficulty: 3
   }
 ];
 
+// Get DOM elements
 const startScreen = document.getElementById('start-screen');
 const quizScreen = document.getElementById('quiz-screen');
 const resultScreen = document.getElementById('result-screen');
@@ -202,24 +203,24 @@ const resultTitle = document.getElementById('result-title');
 const resultText = document.getElementById('result-text');
 const qrCode = document.getElementById('qr-code');
 const copyLinkBtn = document.getElementById('copy-link-btn');
-const hardcoreBadge = document.getElementById('hardcore-badge');
-const difficultyLabel = document.getElementById('difficulty-label');
 const resultBreakdown = document.getElementById('result-breakdown');
-const resultScore = document.getElementById('result-score');
 
+// Get current URL for QR code
 function buildQrUrl(url) {
   return `https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=${encodeURIComponent(url)}`;
 }
 
+// Set QR code on page load
 function setQrCode() {
   if (!qrCode) return;
-  const currentUrl = window.location.href || 'http://localhost:8000';
+  const currentUrl = window.location.href || 'https://jojo8989983170921731.github.io/Pub-Quiz/';
   qrCode.src = buildQrUrl(currentUrl);
 }
 
+// Copy link button handler
 if (copyLinkBtn) {
   copyLinkBtn.addEventListener('click', async () => {
-    const inviteUrl = window.location.href || 'http://localhost:8000';
+    const inviteUrl = window.location.href || 'https://jojo8989983170921731.github.io/Pub-Quiz/';
     try {
       await navigator.clipboard.writeText(inviteUrl);
       copyLinkBtn.textContent = '✅ Link copied!';
@@ -235,20 +236,16 @@ if (copyLinkBtn) {
   });
 }
 
+// Initialize QR code
 setQrCode();
 
+// Quiz state
 let currentIndex = 0;
 let score = 0;
 let answered = false;
 let scoresByDifficulty = { 1: 0, 2: 0, 3: 0 };
 
-function getDifficultyLabel(difficulty) {
-  if (difficulty === 1) return 'Easy Mode ⭐';
-  if (difficulty === 2) return 'Medium Challenge ⭐⭐';
-  if (difficulty === 3) return 'Hardcore Mode 🔥';
-  return '';
-}
-
+// Start quiz
 function startQuiz() {
   currentIndex = 0;
   score = 0;
@@ -260,6 +257,7 @@ function startQuiz() {
   renderQuestion();
 }
 
+// Render current question
 function renderQuestion() {
   const currentQuestion = questions[currentIndex];
   answered = false;
@@ -267,21 +265,14 @@ function renderQuestion() {
 
   progressEl.textContent = `Question ${currentIndex + 1}/30`;
   scoreEl.textContent = `Score: ${score}`;
-  difficultyLabel.textContent = getDifficultyLabel(currentQuestion.difficulty);
-  
-  // Show hardcore badge for difficulty 3
-  if (currentQuestion.difficulty === 3) {
-    hardcoreBadge.classList.remove('hidden');
-  } else {
-    hardcoreBadge.classList.add('hidden');
-  }
 
   questionEl.textContent = currentQuestion.question;
   answersEl.innerHTML = '';
 
   const shuffledOptions = currentQuestion.options
-    .map((text, index) => ({ text, isCorrect: index === currentQuestion.correct }))
+    .map((text, index) => ({ text, isCorrect: index === currentQuestion.correct }));
 
+  // Fisher-Yates shuffle
   for (let index = shuffledOptions.length - 1; index > 0; index -= 1) {
     const randomIndex = Math.floor(Math.random() * (index + 1));
     [shuffledOptions[index], shuffledOptions[randomIndex]] = [shuffledOptions[randomIndex], shuffledOptions[index]];
@@ -298,6 +289,7 @@ function renderQuestion() {
   });
 }
 
+// Handle answer selection
 function handleAnswer(selectedIndex) {
   if (answered) return;
   answered = true;
@@ -324,6 +316,7 @@ function handleAnswer(selectedIndex) {
   nextBtn.classList.remove('hidden');
 }
 
+// Go to next question
 function nextQuestion() {
   if (currentIndex < questions.length - 1) {
     currentIndex += 1;
@@ -333,25 +326,26 @@ function nextQuestion() {
   }
 }
 
+// Show final result
 function showResult() {
   quizScreen.classList.add('hidden');
   resultScreen.classList.remove('hidden');
-  
-  resultScore.textContent = `You scored ${score} out of 30 points`;
-  
+
+  resultText.textContent = `You scored ${score} out of 30 points.`;
+
   let resultMessage = '';
   if (score >= 25) {
-    resultMessage = 'INCREDIBLE! You've mastered the American Dream! 🏆';
+    resultMessage = 'INCREDIBLE! You\'ve mastered the American Dream! 🏆';
   } else if (score >= 20) {
     resultMessage = 'Excellent! You truly understand the American Dream! 🌟';
   } else if (score >= 15) {
     resultMessage = 'Great job! You know a lot about the American Dream! 👏';
   } else if (score >= 10) {
-    resultMessage = 'Good effort! You're learning the way! 💪';
+    resultMessage = 'Good effort! You\'re learning the way! 💪';
   } else {
     resultMessage = 'Keep learning! The journey is the real American Dream! 🚀';
   }
-  
+
   resultTitle.textContent = resultMessage;
 
   // Show breakdown by difficulty
@@ -373,6 +367,7 @@ function showResult() {
   `;
 }
 
+// Event listeners
 if (startBtn) startBtn.addEventListener('click', startQuiz);
 if (nextBtn) nextBtn.addEventListener('click', nextQuestion);
 if (restartBtn) restartBtn.addEventListener('click', startQuiz);

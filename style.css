@@ -1,17 +1,18 @@
 :root {
-  --bg: #f4efe8;
-  --card: #fffaf4;
-  --primary: #c36d2d;
-  --primary-dark: #9d4a18;
-  --text: #1f1f1f;
-  --muted: #5b5149;
-  --success: #3b8b5c;
-  --wrong: #b94747;
-  --line: #e7dcc8;
+  --bg: #edf3f9;
+  --card: #fffefb;
+  --primary: #c63d2f;
+  --primary-dark: #a3261c;
+  --text: #14213d;
+  --muted: #4f5d75;
+  --success: #2d7d4d;
+  --wrong: #b54242;
+  --line: #d9e1ed;
   --soft: #f7f0e5;
-  --usa-red: #b22234;
-  --usa-blue: #3c3b6e;
+  --usa-red: #d32f2f;
+  --usa-blue: #1d4671;
   --usa-gold: #f4d35e;
+  --cream: #fffaf0;
 }
 
 * {
@@ -24,17 +25,18 @@ body {
   display: grid;
   place-items: center;
   background:
-    linear-gradient(135deg, rgba(255,255,255,0.45), rgba(255,255,255,0.15)),
+    linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.15)),
     repeating-linear-gradient(
       180deg,
-      #fff 0,
-      #fff 14px,
-      rgba(178, 34, 52, 0.18) 14px,
-      rgba(178, 34, 52, 0.18) 28px
+      #ffffff 0,
+      #ffffff 14px,
+      rgba(211, 47, 47, 0.12) 14px,
+      rgba(211, 47, 47, 0.12) 28px
     );
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: var(--text);
   position: relative;
+  letter-spacing: 0.01em;
 }
 
 .flag-banner {
@@ -42,32 +44,48 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 22px;
-  background: linear-gradient(90deg, var(--usa-red) 0 50%, var(--usa-blue) 50% 100%);
+  height: 28px;
+  background: linear-gradient(90deg, var(--usa-blue) 0 50%, var(--usa-red) 50% 100%);
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 18px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 16px rgba(16, 33, 61, 0.18);
+  overflow: hidden;
+}
+
+.flag-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    90deg,
+    rgba(255,255,255,0.18) 0,
+    rgba(255,255,255,0.18) 1px,
+    transparent 1px,
+    transparent 8px
+  );
 }
 
 .star {
-  color: #f7f3d6;
-  font-size: 0.7rem;
-  text-shadow: 0 0 2px rgba(0,0,0,0.3);
+  position: relative;
+  z-index: 1;
+  color: var(--usa-gold);
+  font-size: 0.72rem;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
 }
 
 .app {
-  width: min(90vw, 780px);
-  padding-top: 42px;
+  width: min(92vw, 820px);
+  padding-top: 52px;
 }
 
 .card {
-  background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(255,248,240,0.96));
-  border: 1px solid var(--line);
-  border-radius: 24px;
-  box-shadow: 0 18px 40px rgba(39, 23, 10, 0.14);
-  padding: 32px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.97), rgba(255,250,240,0.97));
+  border: 2px solid rgba(29, 70, 113, 0.18);
+  border-radius: 28px;
+  box-shadow: 0 22px 48px rgba(19, 34, 58, 0.15);
+  padding: 32px 30px 26px;
   position: relative;
   overflow: hidden;
 }
@@ -75,8 +93,20 @@ body {
 .card::before {
   content: "";
   position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, rgba(60,59,110,0.04), rgba(178,34,52,0.04));
+  inset: 0 auto auto 0;
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(90deg, var(--usa-red), var(--usa-blue), var(--usa-gold));
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 12px 14px auto auto;
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(circle, rgba(244, 211, 94, 0.22) 0%, rgba(244, 211, 94, 0.02) 60%, transparent 100%);
+  border-radius: 50%;
   pointer-events: none;
 }
 
@@ -90,41 +120,44 @@ body {
 }
 
 .eyebrow {
-  margin: 0 0 8px;
+  margin: 0 0 10px;
   color: var(--usa-red);
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
 }
 
 h1, h2, h3 {
   margin-top: 0;
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
 }
 
 h1 {
-  font-size: clamp(2.2rem, 4vw, 3.2rem);
-  margin-bottom: 10px;
+  font-size: clamp(2.4rem, 4vw, 3.5rem);
+  margin-bottom: 12px;
   color: var(--usa-blue);
+  letter-spacing: 0.02em;
 }
 
 .subtitle {
-  margin: 0 0 18px;
+  margin: 0 0 20px;
   color: var(--muted);
-  line-height: 1.6;
-  font-size: 1.02rem;
+  line-height: 1.7;
+  font-size: 1.04rem;
 }
 
 .join-box {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
-  background: linear-gradient(135deg, #fffaf3, #f9efe2);
+  gap: 18px;
+  background: linear-gradient(135deg, #fffdf7, #f5efe4);
   border: 1px solid var(--line);
+  border-left: 5px solid var(--usa-red);
   border-radius: 18px;
   padding: 20px 18px;
-  margin: 22px 0 10px;
+  margin: 22px 0 12px;
 }
 
 .join-copy {
@@ -133,24 +166,24 @@ h1 {
 
 .join-copy h3 {
   margin-bottom: 8px;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   color: var(--usa-blue);
 }
 
 .join-copy p {
   margin: 0;
-  line-height: 1.5;
+  line-height: 1.6;
   color: var(--muted);
 }
 
 #qr-code {
-  width: 160px;
-  height: 160px;
-  border-radius: 16px;
+  width: 168px;
+  height: 168px;
+  border-radius: 18px;
   background: white;
-  padding: 8px;
-  border: 1px solid var(--line);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+  padding: 9px;
+  border: 2px solid rgba(29, 70, 113, 0.15);
+  box-shadow: 0 10px 22px rgba(20, 33, 61, 0.08);
 }
 
 .actions {
@@ -159,17 +192,30 @@ h1 {
 }
 
 p {
-  line-height: 1.6;
+  line-height: 1.7;
   color: var(--muted);
 }
 
 .topbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 16px;
   color: var(--muted);
-  font-size: 0.95rem;
-  margin-bottom: 24px;
+  font-size: 0.96rem;
+  font-weight: 700;
+  margin-bottom: 22px;
+  padding: 12px 14px;
+  background: rgba(29, 70, 113, 0.05);
+  border: 1px solid rgba(29, 70, 113, 0.08);
+  border-radius: 12px;
+}
+
+#question {
+  color: var(--text);
+  font-size: clamp(1.5rem, 2vw, 2.2rem);
+  line-height: 1.4;
+  margin-bottom: 0;
 }
 
 .answers {
@@ -182,29 +228,34 @@ p {
   width: 100%;
   text-align: left;
   background: #fff;
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  padding: 14px 16px;
+  border: 1px solid rgba(29, 70, 113, 0.15);
+  border-left: 5px solid var(--usa-blue);
+  border-radius: 14px;
+  padding: 15px 16px;
   font-size: 1rem;
   color: var(--text);
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+  box-shadow: 0 2px 0 rgba(20, 33, 61, 0.02);
 }
 
 .answer-btn:hover {
-  border-color: var(--usa-blue);
+  border-color: rgba(29, 70, 113, 0.4);
   transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(29, 70, 113, 0.08);
 }
 
 .answer-btn.correct {
-  background: rgba(59, 139, 92, 0.12);
-  border-color: var(--success);
+  background: rgba(45, 125, 77, 0.1);
+  border-color: rgba(45, 125, 77, 0.8);
+  border-left-color: var(--success);
   color: var(--success);
 }
 
 .answer-btn.wrong {
-  background: rgba(185, 71, 71, 0.08);
-  border-color: var(--wrong);
+  background: rgba(181, 66, 66, 0.08);
+  border-color: rgba(181, 66, 66, 0.7);
+  border-left-color: var(--wrong);
   color: var(--wrong);
 }
 
@@ -216,38 +267,52 @@ p {
 .primary-btn,
 .secondary-btn {
   border: none;
-  padding: 12px 24px;
+  padding: 13px 26px;
   border-radius: 999px;
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 800;
+  letter-spacing: 0.02em;
   cursor: pointer;
-  transition: background 0.2s ease, transform 0.2s ease;
+  transition: transform 0.2s ease, filter 0.2s ease, box-shadow 0.2s ease;
 }
 
 .primary-btn {
   margin-top: 22px;
-  background: linear-gradient(135deg, var(--usa-red), #d84f3d);
+  background: linear-gradient(135deg, var(--usa-red), #b52d27);
   color: white;
+  box-shadow: 0 12px 24px rgba(182, 41, 35, 0.22);
 }
 
 .primary-btn:hover {
   transform: translateY(-1px);
-  filter: brightness(1.05);
+  filter: brightness(1.04);
 }
 
 .secondary-btn {
   margin-top: 14px;
-  background: var(--usa-blue);
+  background: linear-gradient(135deg, var(--usa-blue), #234d8d);
   color: white;
+  box-shadow: 0 12px 24px rgba(29, 70, 113, 0.18);
 }
 
 .secondary-btn:hover {
-  filter: brightness(1.08);
+  filter: brightness(1.06);
+}
+
+#result-title {
+  color: var(--usa-blue);
+  font-size: clamp(2rem, 3vw, 2.7rem);
+  margin-bottom: 8px;
+}
+
+#result-text {
+  margin-top: 0;
+  font-size: 1.1rem;
 }
 
 @media (max-width: 600px) {
   .card {
-    padding: 22px 18px;
+    padding: 26px 18px 20px;
   }
 
   .join-box {
@@ -258,5 +323,10 @@ p {
   .topbar {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  #qr-code {
+    width: 150px;
+    height: 150px;
   }
 }

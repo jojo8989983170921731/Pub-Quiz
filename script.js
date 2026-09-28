@@ -1,153 +1,190 @@
+// DIFFICULTY LEVELS: 1 = EASY (1-10), 2 = MEDIUM (11-20), 3 = HARDCORE (21-30)
+
 const questions = [
+  // ===== EASY MODE (Questions 1-10) =====
   {
-    question: 'Who popularized the phrase “the American Dream” in his 1931 book The Epic of America?',
-    options: ['James Truslow Adams', 'Frederick Jackson Turner', 'Walter Lippmann', 'John Steinbeck'],
-    correct: 0
+    question: 'What country's Dream are we talking about?',
+    options: ['The United States of America', 'Canada', 'Mexico', 'United Kingdom'],
+    correct: 0,
+    difficulty: 1
   },
   {
-    question: 'In Adams’s definition, what was central to the American Dream?',
-    options: ['A society where people can develop to their fullest potential', 'A guarantee that every household will own land', 'A return to inherited ranks and titles', 'A promise of equal income for all citizens'],
-    correct: 0
+    question: 'Which of these is a symbol of the American Dream?',
+    options: ['Owning your own home', 'Working in a factory', 'Taking a vacation', 'Playing video games'],
+    correct: 0,
+    difficulty: 1
   },
   {
-    question: 'Which novel follows Jay Gatsby’s pursuit of wealth and status on Long Island?',
-    options: ['The Great Gatsby', 'An American Tragedy', 'The Grapes of Wrath', 'The Age of Innocence'],
-    correct: 0
+    question: 'What year did the phrase "American Dream" become popular?',
+    options: ['1931', '1776', '1950', '1995'],
+    correct: 0,
+    difficulty: 1
   },
   {
-    question: 'In The Great Gatsby, what does the green light across the water most strongly suggest?',
-    options: ['Gatsby’s longing for an idealized future', 'Daisy’s rejection of her family’s wealth', 'Nick’s desire to leave the Midwest', 'The decline of New York’s suburbs'],
-    correct: 0
+    question: 'Who wrote the novel "The Great Gatsby," a famous story about the American Dream?',
+    options: ['F. Scott Fitzgerald', 'Ernest Hemingway', 'Mark Twain', 'John Steinbeck'],
+    correct: 0,
+    difficulty: 1
   },
   {
-    question: 'Which author wrote The Grapes of Wrath, depicting a family displaced during the Dust Bowl and Great Depression?',
-    options: ['John Steinbeck', 'Upton Sinclair', 'Theodore Dreiser', 'Sinclair Lewis'],
-    correct: 0
+    question: 'Which of these is NOT part of the traditional American Dream?',
+    options: ['Living in poverty forever', 'Having a successful career', 'Owning a car', 'Raising a family'],
+    correct: 0,
+    difficulty: 1
   },
   {
-    question: 'What did the Homestead Act of 1862 offer eligible settlers who developed land in the West?',
-    options: ['A claim to a parcel of public land', 'A federal loan for factory work', 'Free passage through Ellis Island', 'Automatic citizenship for their families'],
-    correct: 0
+    question: 'What does "opportunity" mean in the American Dream?',
+    options: ['A chance to succeed and improve your life', 'Free money from the government', 'A job you must keep forever', 'Something only rich people get'],
+    correct: 0,
+    difficulty: 1
   },
   {
-    question: 'Which limitation of the Homestead Act is important when assessing its promise of opportunity?',
-    options: ['Much of the land had already been taken from Indigenous peoples', 'It applied only to people who had inherited a farm', 'It barred settlers from cultivating the land', 'It was restricted to residents of eastern cities'],
-    correct: 0
+    question: 'In "The Great Gatsby," what does Gatsby dream about?',
+    options: ['Winning back his lost love', 'Becoming a scientist', 'Moving to Europe', 'Joining the military'],
+    correct: 0,
+    difficulty: 1
   },
   {
-    question: 'What was one major purpose of the 1944 GI Bill?',
-    options: ['To help eligible veterans pay for education and housing', 'To guarantee federal jobs to returning nurses', 'To provide land grants to all wartime factory workers', 'To establish Social Security for military families'],
-    correct: 0
+    question: 'Which American leader spoke about having a "dream" for the future?',
+    options: ['Martin Luther King Jr.', 'Abraham Lincoln', 'George Washington', 'Thomas Jefferson'],
+    correct: 0,
+    difficulty: 1
   },
   {
-    question: 'Why did the GI Bill not provide equal benefits to all veterans in practice?',
-    options: ['Local discrimination and segregated institutions restricted access', 'Only officers were eligible to apply', 'Benefits were limited to veterans born in the United States', 'Its education provisions ended before World War II veterans returned'],
-    correct: 0
+    question: 'What does "self-made" mean in the American Dream?',
+    options: ['Succeeding through your own hard work', 'Making your own clothes', 'Building your own house', 'Creating your own business from nothing'],
+    correct: 0,
+    difficulty: 1
   },
   {
-    question: 'What did “redlining” generally do to residents of neighborhoods marked as risky by lenders?',
-    options: ['Restricted access to mortgages and other credit', 'Required them to insure homes through the federal government', 'Guaranteed them lower property-tax assessments', 'Reserved newly built homes for first-time buyers'],
-    correct: 0
+    question: 'Which of these is a real opportunity in the American Dream?',
+    options: ['Attending school and getting an education', 'Waiting for success to come', 'Avoiding hard work', 'Ignoring new skills'],
+    correct: 0,
+    difficulty: 1
+  },
+
+  // ===== MEDIUM MODE (Questions 11-20) =====
+  {
+    question: 'James Truslow Adams popularized the phrase "American Dream" in which book?',
+    options: ['The Epic of America', 'The Wealth of Nations', 'Democracy in America', 'The American Spirit'],
+    correct: 0,
+    difficulty: 2
   },
   {
-    question: 'Which law outlawed many forms of discrimination in public accommodations and employment in 1964?',
-    options: ['Civil Rights Act', 'Voting Rights Act', 'Fair Housing Act', 'National Labor Relations Act'],
-    correct: 0
+    question: 'What act of 1862 offered land to settlers who would develop it?',
+    options: ['Homestead Act', 'Civil Rights Act', 'Land Grant Act', 'Expansion Doctrine'],
+    correct: 0,
+    difficulty: 2
   },
   {
-    question: 'What was the Great Migration in twentieth-century U.S. history?',
-    options: ['The movement of millions of Black Americans from the South to other regions', 'The relocation of Dust Bowl farmers to California', 'The westward movement prompted by the Homestead Act', 'The return of U.S. troops after World War II'],
-    correct: 0
+    question: 'The 1944 GI Bill primarily helped which group achieve the American Dream?',
+    options: ['Returning military veterans', 'Factory workers', 'Immigrants', 'Farmers'],
+    correct: 0,
+    difficulty: 2
   },
   {
-    question: 'Which group was excluded from Social Security coverage when it was first created in 1935, leaving many workers of color outside the system?',
-    options: ['Many agricultural and domestic workers', 'Most public-school teachers', 'All railroad employees', 'Federal office workers'],
-    correct: 0
+    question: 'What was "redlining" in American housing policy?',
+    options: ['Restricting access to mortgages in certain neighborhoods', 'Painting houses with red lines', 'Creating neighborhood organizations', 'Offering special discounts'],
+    correct: 0,
+    difficulty: 2
   },
   {
-    question: 'What changed with the Immigration and Nationality Act of 1965?',
-    options: ['It ended the national-origins quota system', 'It established the first U.S. naturalization process', 'It limited immigration to Western Europe', 'It created Ellis Island as a federal port'],
-    correct: 0
+    question: 'Which movement of the 20th century involved millions of Black Americans relocating?',
+    options: ['The Great Migration', 'The Gold Rush', 'The California Dream', 'The Industrial Revolution'],
+    correct: 0,
+    difficulty: 2
   },
   {
-    question: 'Why are postwar suburbs such as Levittown often discussed in critiques of the American Dream?',
-    options: ['Access to new homes was shaped by racial exclusion and discriminatory policies', 'They were built mainly for families displaced by the Dust Bowl', 'Federal law required every home to be sold to a veteran', 'They offered public housing rather than privately owned homes'],
-    correct: 0
+    question: 'What is "meritocracy"?',
+    options: ['Rewards based on ability and achievement', 'Wealth passed from parents to children', 'Government control of businesses', 'A type of government'],
+    correct: 0,
+    difficulty: 2
   },
   {
-    question: 'In his 1963 “I Have a Dream” speech, Martin Luther King Jr. called for the nation to live up to which founding text’s promises?',
-    options: ['The Declaration of Independence and the Constitution', 'The Articles of Confederation and the Northwest Ordinance', 'The Emancipation Proclamation and the Monroe Doctrine', 'The Federalist Papers and the Bill of Rights'],
-    correct: 0
+    question: 'The Immigration and Nationality Act of 1965 abolished what system?',
+    options: ['National-origins quota system', 'Citizenship requirements', 'Passport regulations', 'Border controls'],
+    correct: 0,
+    difficulty: 2
   },
   {
-    question: 'What does “meritocracy” mean in debates about opportunity?',
-    options: ['Positions and rewards are allocated according to ability and achievement', 'Wealth is distributed equally regardless of work', 'Public office is inherited within families', 'Economic outcomes are determined entirely by geography'],
-    correct: 0
+    question: 'In Arthur Miller's "Death of a Salesman," what does Willy Loman question?',
+    options: ['Whether success equals self-worth', 'Whether he should move', 'Whether cars are safe', 'Whether cities are better'],
+    correct: 0,
+    difficulty: 2
   },
   {
-    question: 'What is intergenerational economic mobility?',
-    options: ['A change in economic position between parents and their children', 'A worker changing jobs several times in one career', 'The movement of businesses between states', 'A household moving from a city to a suburb'],
-    correct: 0
+    question: 'What is "intergenerational economic mobility"?',
+    options: ['Change in economic position between parents and children', 'Moving to a different country', 'Changing jobs frequently', 'Inheriting family wealth'],
+    correct: 0,
+    difficulty: 2
   },
   {
-    question: 'Why can a college degree be both a route to opportunity and a source of financial risk in the United States?',
-    options: ['Tuition can require substantial borrowing, even when a degree improves job prospects', 'Degrees are legally required for nearly every job, but federal loans are unavailable', 'College attendance generally prevents graduates from changing careers', 'Tuition is paid only after graduates reach a fixed income'],
-    correct: 0
+    question: 'According to Langston Hughes, what happens to a dream deferred?',
+    options: ['It may wither or explode', 'It becomes stronger', 'It disappears forever', 'It returns the next day'],
+    correct: 0,
+    difficulty: 2
+  },
+
+  // ===== HARDCORE MODE (Questions 21-30) =====
+  {
+    question: 🔥 Which historical factor most directly undermined the promise of the Homestead Act for Black Americans and Indigenous peoples?',
+    options: ['Systemic exclusion from land claims and prior Indigenous dispossession', 'Lack of transportation to western territories', 'Language barriers preventing settlement', 'Absence of agricultural knowledge'],
+    correct: 0,
+    difficulty: 3
   },
   {
-    question: 'Which statement best distinguishes income from wealth?',
-    options: ['Income is money received over time; wealth is the value of assets minus debts', 'Income is property owned; wealth is a worker’s annual pay', 'Income counts investments; wealth counts only wages', 'Income and wealth are two names for household spending'],
-    correct: 0
+    question: '🔥 Why did discriminatory practices in mortgage lending (redlining) create persistent generational wealth gaps even after explicit bans?',
+    options: ['Missed decades of home equity accumulation and community investment', 'Affected only individual borrowers temporarily', 'Was completely reversed by the Fair Housing Act', 'Only prevented Black Americans from owning homes once'],
+    correct: 0,
+    difficulty: 3
   },
   {
-    question: 'Why is homeownership often treated as a marker of the American Dream, despite not being attainable or desirable for everyone?',
-    options: ['It can represent stability and an asset that may appreciate over time', 'It is the only legal way to build savings in the United States', 'Federal law requires households to own rather than rent', 'Home values rise at the same rate in every community'],
-    correct: 0
+    question: '🔥 How did Social Security\'s original exclusion of agricultural and domestic workers disproportionately impact opportunity?',
+    options: ['Left millions of workers of color without retirement security', 'Increased factory employment', 'Made education more affordable', 'Encouraged westward migration'],
+    correct: 0,
+    difficulty: 3
   },
   {
-    question: 'Which factor has been linked to the lasting effects of mass incarceration on economic opportunity?',
-    options: ['A criminal record can create barriers to employment and housing', 'A prison sentence automatically cancels student debt', 'People with convictions receive priority for public-sector jobs', 'Incarceration has no effect after a person is released'],
-    correct: 0
+    question: '🔥 What paradox did the GI Bill exemplify regarding American opportunity?',
+    options: ['Its benefits were conditioned on local segregation and discrimination', 'It was offered to all veterans equally', 'It eliminated all racial barriers immediately', 'It prevented future generations from attending college'],
+    correct: 0,
+    difficulty: 3
   },
   {
-    question: 'What did the Equal Pay Act of 1963 specifically target?',
-    options: ['Wage differences based on sex for equal work', 'Hiring discrimination based on race in public businesses', 'Unequal access to mortgages by neighborhood', 'Different pay scales between federal and state workers'],
-    correct: 0
+    question: '🔥 In contemporary debates, why is the relationship between education and debt essential to understanding the American Dream?',
+    options: ['Education investment increasingly requires borrowing that may outweigh economic gains', 'All college graduates become wealthy', 'Student loans have no impact on long-term wealth', 'Education eliminates all financial risk'],
+    correct: 0,
+    difficulty: 3
   },
   {
-    question: 'What is a key difference between the federal minimum wage and a “living wage” estimate?',
-    options: ['A living-wage estimate reflects local costs for basic needs', 'The federal minimum changes automatically with local rent', 'A living wage is the same national rate set by Congress', 'The federal minimum applies only to salaried workers'],
-    correct: 0
+    question: '🔥 Which structural distinction reveals why "equal opportunity" differs fundamentally from "equal outcomes"?',
+    options: ['Access to chances ≠ where people ultimately end up due to compounding advantages/disadvantages', 'Opportunity and outcomes are identical', 'Only rich people have opportunities', 'Everyone achieves the same outcome automatically'],
+    correct: 0,
+    difficulty: 3
   },
   {
-    question: 'Which genre helped popularize stories of poor boys rising to success in the late 19th century?',
-    options: ['Horatio Alger’s “rags-to-riches” novels', 'Southern Gothic plantation novels', 'Transcendentalist nature essays', 'The Lost Generation’s war poetry'],
-    correct: 0
+    question: '🔥 How does mass incarceration specifically undermine the American Dream\'s premise of self-improvement?',
+    options: ['Criminal records create barriers to employment, housing, and civic participation', 'Incarceration has no economic consequences', 'Prison sentences eliminate all debt', 'Convicted individuals can easily find housing'],
+    correct: 0,
+    difficulty: 3
   },
   {
-    question: 'In Arthur Miller’s Death of a Salesman, what does Willy Loman’s story chiefly question?',
-    options: ['Whether popularity and material success are reliable measures of worth', 'Whether rural life offers more opportunity than city life', 'Whether military service guarantees social status', 'Whether inherited wealth can strengthen family ties'],
-    correct: 0
+    question: '🔥 What makes the distinction between "income" and "wealth" crucial for analyzing whether the American Dream is achievable?',
+    options: ['Income is temporary earnings; wealth (assets minus debts) provides long-term security and intergenerational transfer', 'Income and wealth are the same thing', 'Wealth comes only from high income', 'Income determines wealth immediately'],
+    correct: 0,
+    difficulty: 3
   },
   {
-    question: 'In Langston Hughes’s poem “Harlem,” what question frames its reflection on deferred dreams?',
-    options: ['What happens to a dream deferred?', 'Who owns the fields beyond the city?', 'Where does the wandering river end?', 'When will the promised train arrive?'],
-    correct: 0
+    question: '🔥 How did practices like redlining and discriminatory lending simultaneously limit both wealth and opportunity for generations?',
+    options: ['Prevented home ownership (primary wealth vehicle), reduced neighborhood investment, and created cycles of disadvantage', 'Only affected prices temporarily', 'Was reversed by individual effort alone', 'Created equal opportunities regardless of neighborhood'],
+    correct: 0,
+    difficulty: 3
   },
   {
-    question: 'Which interpretation best captures the tension often explored in American Dream stories?',
-    options: ['The promise of self-made success can clash with unequal starting conditions', 'Economic growth eliminates the need for personal freedom', 'Family loyalty always prevents people from changing their status', 'Urban life makes social mobility impossible in every case'],
-    correct: 0
-  },
-  {
-    question: 'Why is the American Dream not a single, fixed definition shared by every generation?',
-    options: ['Its meaning has shifted with changing ideas about freedom, security, and success', 'It has always referred only to owning a detached house', 'It is defined in one clause of the Constitution', 'It was used only by writers and never in public debate'],
-    correct: 0
-  },
-  {
-    question: 'Which is the strongest reason to distinguish “equal opportunity” from “equal outcomes” in this debate?',
-    options: ['Opportunity concerns access to chances; outcomes concern where people ultimately end up', 'Opportunity measures income, while outcomes measure only education', 'Opportunity applies to individuals, while outcomes apply only to businesses', 'Opportunity and outcomes are interchangeable terms in U.S. law'],
-    correct: 0
+    question: '🔥 In the context of the American Dream, why do scholars distinguish between "aspiration" and "actual mobility"?',
+    options: ['Many believe in upward mobility but structural barriers prevent it, revealing gap between ideology and reality', 'All aspirations become reality', 'Actual mobility is guaranteed regardless of circumstances', 'There is no difference between the two'],
+    correct: 0,
+    difficulty: 3
   }
 ];
 
@@ -165,6 +202,10 @@ const resultTitle = document.getElementById('result-title');
 const resultText = document.getElementById('result-text');
 const qrCode = document.getElementById('qr-code');
 const copyLinkBtn = document.getElementById('copy-link-btn');
+const hardcoreBadge = document.getElementById('hardcore-badge');
+const difficultyLabel = document.getElementById('difficulty-label');
+const resultBreakdown = document.getElementById('result-breakdown');
+const resultScore = document.getElementById('result-score');
 
 function buildQrUrl(url) {
   return `https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=${encodeURIComponent(url)}`;
@@ -181,14 +222,14 @@ if (copyLinkBtn) {
     const inviteUrl = window.location.href || 'http://localhost:8000';
     try {
       await navigator.clipboard.writeText(inviteUrl);
-      copyLinkBtn.textContent = 'Link copied';
+      copyLinkBtn.textContent = '✅ Link copied!';
       setTimeout(() => {
-        copyLinkBtn.textContent = 'Copy invite link';
+        copyLinkBtn.textContent = '📋 Copy invite link';
       }, 1500);
     } catch (error) {
       copyLinkBtn.textContent = 'Copy not supported';
       setTimeout(() => {
-        copyLinkBtn.textContent = 'Copy invite link';
+        copyLinkBtn.textContent = '📋 Copy invite link';
       }, 1500);
     }
   });
@@ -199,11 +240,20 @@ setQrCode();
 let currentIndex = 0;
 let score = 0;
 let answered = false;
+let scoresByDifficulty = { 1: 0, 2: 0, 3: 0 };
+
+function getDifficultyLabel(difficulty) {
+  if (difficulty === 1) return 'Easy Mode ⭐';
+  if (difficulty === 2) return 'Medium Challenge ⭐⭐';
+  if (difficulty === 3) return 'Hardcore Mode 🔥';
+  return '';
+}
 
 function startQuiz() {
   currentIndex = 0;
   score = 0;
   answered = false;
+  scoresByDifficulty = { 1: 0, 2: 0, 3: 0 };
   startScreen.classList.add('hidden');
   resultScreen.classList.add('hidden');
   quizScreen.classList.remove('hidden');
@@ -215,8 +265,17 @@ function renderQuestion() {
   answered = false;
   nextBtn.classList.add('hidden');
 
-  progressEl.textContent = `Question ${currentIndex + 1}/${questions.length}`;
+  progressEl.textContent = `Question ${currentIndex + 1}/30`;
   scoreEl.textContent = `Score: ${score}`;
+  difficultyLabel.textContent = getDifficultyLabel(currentQuestion.difficulty);
+  
+  // Show hardcore badge for difficulty 3
+  if (currentQuestion.difficulty === 3) {
+    hardcoreBadge.classList.remove('hidden');
+  } else {
+    hardcoreBadge.classList.add('hidden');
+  }
+
   questionEl.textContent = currentQuestion.question;
   answersEl.innerHTML = '';
 
@@ -244,6 +303,7 @@ function handleAnswer(selectedIndex) {
   answered = true;
 
   const buttons = [...answersEl.querySelectorAll('.answer-btn')];
+  const currentQuestion = questions[currentIndex];
 
   buttons.forEach((button, index) => {
     button.disabled = true;
@@ -257,6 +317,7 @@ function handleAnswer(selectedIndex) {
 
   if (buttons[selectedIndex].dataset.correct === 'true') {
     score += 1;
+    scoresByDifficulty[currentQuestion.difficulty] += 1;
     scoreEl.textContent = `Score: ${score}`;
   }
 
@@ -275,8 +336,41 @@ function nextQuestion() {
 function showResult() {
   quizScreen.classList.add('hidden');
   resultScreen.classList.remove('hidden');
-  resultTitle.textContent = score >= 22 ? 'Excellent work!' : score >= 15 ? 'Strong performance!' : 'Good effort!';
-  resultText.textContent = `You scored ${score} out of ${questions.length} points. Nice job!`;
+  
+  resultScore.textContent = `You scored ${score} out of 30 points`;
+  
+  let resultMessage = '';
+  if (score >= 25) {
+    resultMessage = 'INCREDIBLE! You've mastered the American Dream! 🏆';
+  } else if (score >= 20) {
+    resultMessage = 'Excellent! You truly understand the American Dream! 🌟';
+  } else if (score >= 15) {
+    resultMessage = 'Great job! You know a lot about the American Dream! 👏';
+  } else if (score >= 10) {
+    resultMessage = 'Good effort! You're learning the way! 💪';
+  } else {
+    resultMessage = 'Keep learning! The journey is the real American Dream! 🚀';
+  }
+  
+  resultTitle.textContent = resultMessage;
+
+  // Show breakdown by difficulty
+  resultBreakdown.innerHTML = `
+    <div class="score-breakdown">
+      <div class="breakdown-item">
+        <span class="difficulty-badge easy-badge">Easy Mode</span>
+        <span class="breakdown-score">${scoresByDifficulty[1]}/10</span>
+      </div>
+      <div class="breakdown-item">
+        <span class="difficulty-badge medium-badge">Medium Challenge</span>
+        <span class="breakdown-score">${scoresByDifficulty[2]}/10</span>
+      </div>
+      <div class="breakdown-item">
+        <span class="difficulty-badge hardcore-badge-result">Hardcore Mode 🔥</span>
+        <span class="breakdown-score">${scoresByDifficulty[3]}/10</span>
+      </div>
+    </div>
+  `;
 }
 
 if (startBtn) startBtn.addEventListener('click', startQuiz);

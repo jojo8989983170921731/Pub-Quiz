@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>American Dream Pub Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="flag-banner" aria-hidden="true">
+      <span class="star">★</span>
+      <span class="star">★</span>
+      <span class="star">★</span>
+    </div>
+
+    <main class="app">
+      <section class="card" id="start-screen">
+        <p class="eyebrow">Welcome to the table</p>
+        <h1>American Dream Pub Quiz</h1>
+        <p class="subtitle">
+          Gather round, grab a drink, and test your knowledge of one of the biggest
+          ideas in American culture.
+        </p>
+
+        <div class="join-box">
+          <div class="join-copy">
+            <h3>Join from your phone</h3>
+            <p>Scan the QR code or use the invite link to jump straight into the quiz.</p>
+            <button id="copy-link-btn" class="secondary-btn" type="button">Copy invite link</button>
+          </div>
+          <img id="qr-code" alt="QR code to join the quiz" src="" />
+        </div>
+
+        <div class="actions">
+          <button id="start-btn" class="primary-btn">Start the game</button>
+        </div>
+      </section>
+
+      <section class="card hidden" id="quiz-screen">
+        <div class="topbar">
+          <span id="progress">Question 1/30</span>
+          <span id="score">Score: 0</span>
+        </div>
+
+        <h2 id="question">Question</h2>
+        <div id="answers" class="answers"></div>
+        <button id="next-btn" class="primary-btn hidden">Next</button>
+      </section>
+
+      <section class="card hidden" id="result-screen">
+        <p class="eyebrow">Final score</p>
+        <h2 id="result-title">Nice one!</h2>
+        <p id="result-text">You scored X out of 30 points.</p>
+        <button id="restart-btn" class="primary-btn">Play again</button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -292,4 +292,3 @@ function showResult() {
 if (startBtn) startBtn.addEventListener('click', startQuiz);
 if (nextBtn) nextBtn.addEventListener('click', nextQuestion);
 if (restartBtn) restartBtn.addEventListener('click', startQuiz);
-

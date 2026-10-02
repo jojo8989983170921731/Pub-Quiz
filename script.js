@@ -3,124 +3,124 @@
 const questions = [
   // ===== EASY MODE (Questions 1-10) =====
   {
-    question: 'What country is most closely connected with the American Dream?',
-    options: ['United States', 'Canada', 'Mexico', 'France'],
+    question: 'What is the American Dream?',
+    options: ['The idea that everyone can be successful', 'A movie', 'A holiday', 'A city'],
     correct: 0,
     difficulty: 1
   },
   {
-    question: 'Which of these is a symbol of the American Dream?',
-    options: ['Owning a home', 'Taking a nap', 'Watching TV all day', 'Skipping school'],
+    question: 'What do you need for the American Dream?',
+    options: ['Hard work', 'Luck only', 'Famous parents', 'A lot of followers'],
     correct: 0,
     difficulty: 1
   },
   {
-    question: 'What does the American Dream usually mean?',
-    options: ['A chance to build a better life', 'Winning the lottery', 'Never working again', 'Living in a castle'],
+    question: 'Where does the American Dream come from?',
+    options: ['USA', 'Germany', 'France', 'Canada'],
     correct: 0,
     difficulty: 1
   },
   {
-    question: 'What does "self-made" usually mean?',
-    options: ['You made your success through hard work', 'You were born rich', 'You got everything free', 'You never had to try'],
+    question: 'Why did many people move to America?',
+    options: ['For a better life', 'For the weather', 'For free food', 'For Hollywood'],
     correct: 0,
     difficulty: 1
   },
   {
-    question: 'Who gave the famous "I Have a Dream" speech?',
-    options: ['Martin Luther King Jr.', 'Abraham Lincoln', 'Steve Jobs', 'Tom Hanks'],
+    question: 'What is a typical part of the American Dream?',
+    options: ['Having your own house', 'Never working', 'Being famous', 'Having a private jet'],
     correct: 0,
     difficulty: 1
   },
   {
-    question: 'Which of these is part of the American Dream?',
-    options: ['Getting a good job', 'Never leaving home', 'Avoiding all effort', 'Going to bed early every night'],
+    question: 'What does "from rags to riches" mean?',
+    options: ['Going from poor to rich', 'Buying new clothes', 'Losing your money', 'Going shopping'],
     correct: 0,
     difficulty: 1
   },
   {
-    question: 'What is one reason many people move to America?',
-    options: ['For more opportunity', 'To avoid all weather', 'To never work', 'To buy a yacht'],
+    question: 'Which statue is a symbol of freedom in America?',
+    options: ['Statue of Liberty', 'Eiffel Tower', 'Big Ben', 'Colosseum'],
     correct: 0,
     difficulty: 1
   },
   {
-    question: 'What does "opportunity" mean in the American Dream?',
-    options: ['A chance to improve your life', 'A free trip around the world', 'A promise to avoid problems', 'A hidden treasure map'],
+    question: 'Where is the Statue of Liberty?',
+    options: ['New York', 'Los Angeles', 'Miami', 'Chicago'],
     correct: 0,
     difficulty: 1
   },
   {
-    question: 'Which of these is NOT part of the traditional American Dream?',
-    options: ['Living in poverty forever', 'Having a successful career', 'Owning a home', 'Raising a family'],
+    question: 'What is important in the American Dream?',
+    options: ['Freedom', 'Being lazy', 'Sleeping a lot', 'Being famous'],
     correct: 0,
     difficulty: 1
   },
   {
-    question: 'What is something people often hope for in the American Dream?',
-    options: ['A better future for themselves and their family', 'No responsibilities at all', 'A free house forever', 'An endless vacation'],
+    question: 'What does freedom mean?',
+    options: ['Being able to make your own choices', 'Getting everything for free', 'Never going to school', 'Never following rules'],
     correct: 0,
     difficulty: 1
   },
 
   // ===== MEDIUM MODE (Questions 11-20) =====
   {
-    question: 'Who wrote The Great Gatsby, a famous American Dream story?',
-    options: ['F. Scott Fitzgerald', 'J.K. Rowling', 'Mark Twain', 'Ernest Hemingway'],
+    question: 'Can poor people achieve the American Dream?',
+    options: ['Yes, that\'s part of the idea', 'No', 'Only in New York', 'Only if they\'re famous'],
     correct: 0,
     difficulty: 2
   },
   {
-    question: 'In The Great Gatsby, what does Gatsby dream about?',
-    options: ['Winning back his lost love', 'Becoming a famous singer', 'Going to space', 'Opening a bakery'],
+    question: 'What is a common goal of the American Dream?',
+    options: ['Getting a good job', 'Becoming an actor', 'Buying a sports car', 'Meeting the president'],
     correct: 0,
     difficulty: 2
   },
   {
-    question: 'What does success often mean in the American Dream?',
-    options: ['Doing well and building a stable life', 'Never making mistakes', 'Being famous overnight', 'Having a huge mansion only'],
+    question: 'Who gave the "I Have a Dream" speech?',
+    options: ['Martin Luther King Jr.', 'George Washington', 'Taylor Swift', 'Elon Musk'],
     correct: 0,
     difficulty: 2
   },
   {
-    question: 'What does education usually help people do in the American Dream?',
-    options: ['Get better opportunities', 'Sleep more', 'Skip work forever', 'Avoid all responsibilities'],
+    question: 'What did Martin Luther King Jr. want?',
+    options: ['Equal rights', 'More money', 'A bigger house', 'To become an actor'],
     correct: 0,
     difficulty: 2
   },
   {
-    question: 'What is one big idea behind the American Dream?',
-    options: ['Anyone can work hard and improve their life', 'Only rich people can succeed', 'Success happens by luck alone', 'You should never try something new'],
+    question: 'What is another important part of the American Dream?',
+    options: ['Having a family and a good life', 'Being on TV', 'Being a millionaire', 'Living in Hollywood'],
     correct: 0,
     difficulty: 2
   },
   {
-    question: 'Which of these is a common goal in the American Dream?',
-    options: ['Having a safe, comfortable life', 'Never paying bills', 'Avoiding all stress', 'Living without goals'],
+    question: 'Can the American Dream be different for different people?',
+    options: ['Yes', 'No', 'Only for adults', 'Only for Americans'],
     correct: 0,
     difficulty: 2
   },
   {
-    question: 'What does the word "dream" mean in this quiz?',
-    options: ['A hope for a better future', 'A random idea you forget', 'A movie you watch', 'A dream you have while sleeping'],
+    question: 'What can the American Dream give people hope for?',
+    options: ['A better future', 'Free money', 'No school', 'Becoming famous'],
     correct: 0,
     difficulty: 2
   },
   {
-    question: 'What is one thing people often want to do to reach the American Dream?',
-    options: ['Work hard and keep trying', 'Give up quickly', 'Avoid learning', 'Stop taking chances'],
+    question: 'What colors are on the American flag?',
+    options: ['Red, white and blue', 'Black, red and yellow', 'Green and white', 'Blue and yellow'],
     correct: 0,
     difficulty: 2
   },
   {
-    question: 'Which of these best matches the American Dream?',
-    options: ['Building a better life through effort', 'Winning without trying', 'Doing nothing and hoping', 'Getting rich instantly'],
+    question: 'How many stars are on the American flag?',
+    options: ['50', '20', '100', '13'],
     correct: 0,
     difficulty: 2
   },
   {
-    question: 'What does a person usually need to succeed in the American Dream?',
-    options: ['Hard work, hope, and opportunity', 'Only money from family', 'A perfect life from the start', 'No effort at all'],
+    question: 'What do the 50 stars on the American flag represent?',
+    options: ['The 50 states', '50 presidents', '50 cities', '50 years'],
     correct: 0,
     difficulty: 2
   }
@@ -268,7 +268,7 @@ function showResult() {
   } else if (score >= 12) {
     resultMessage = 'Great job! Nice one! 👏';
   } else if (score >= 9) {
-    resultMessage = 'Good effort! You’re getting there! 💪';
+    resultMessage = 'Good effort! You\'re getting there! 💪';
   } else {
     resultMessage = 'Nice try! Keep learning and come back! 🚀';
   }

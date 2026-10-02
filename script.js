@@ -1,190 +1,128 @@
-// DIFFICULTY LEVELS: 1 = EASY (1-10), 2 = MEDIUM (11-20), 3 = HARDCORE (21-30)
+// DIFFICULTY LEVELS: 1 = EASY (1-10), 2 = MEDIUM (11-20)
 
 const questions = [
   // ===== EASY MODE (Questions 1-10) =====
   {
-    question: 'What country\'s Dream are we talking about?',
-    options: ['The United States of America', 'Canada', 'Mexico', 'United Kingdom'],
-    correct: 0,
+    question: 'Who is the highest paid athlete in America right now?',
+    options: ['Lionel Messi', 'Cristiano Ronaldo', 'Patrick Mahomes', 'Tom Brady'],
+    correct: 2,
     difficulty: 1
   },
   {
-    question: 'Which of these is a symbol of the American Dream?',
-    options: ['Owning your own home', 'Working in a factory', 'Taking a vacation', 'Playing video games'],
-    correct: 0,
+    question: 'Which country has won the most FIFA World Cups?',
+    options: ['Germany', 'Brazil', 'France', 'Italy'],
+    correct: 1,
     difficulty: 1
   },
   {
-    question: 'What year did the phrase "American Dream" become popular?',
-    options: ['1931', '1776', '1950', '1995'],
-    correct: 0,
+    question: 'What sport is LeBron James famous for?',
+    options: ['Football', 'Baseball', 'Basketball', 'Tennis'],
+    correct: 2,
     difficulty: 1
   },
   {
-    question: 'Who wrote the novel "The Great Gatsby," a famous story about the American Dream?',
-    options: ['F. Scott Fitzgerald', 'Ernest Hemingway', 'Mark Twain', 'John Steinbeck'],
-    correct: 0,
+    question: 'How many Super Bowls has Tom Brady won?',
+    options: ['5', '7', '6', '8'],
+    correct: 1,
     difficulty: 1
   },
   {
-    question: 'Which of these is NOT part of the traditional American Dream?',
-    options: ['Living in poverty forever', 'Having a successful career', 'Owning a car', 'Raising a family'],
-    correct: 0,
+    question: 'Which tennis player has won the most Grand Slam titles?',
+    options: ['Roger Federer', 'Novak Djokovic', 'Margaret Court', 'Rafael Nadal'],
+    correct: 1,
     difficulty: 1
   },
   {
-    question: 'What does "opportunity" mean in the American Dream?',
-    options: ['A chance to succeed and improve your life', 'Free money from the government', 'A job you must keep forever', 'Something only rich people get'],
-    correct: 0,
+    question: 'What is the national sport of Japan?',
+    options: ['Soccer', 'Sumo wrestling', 'Tennis', 'Badminton'],
+    correct: 1,
     difficulty: 1
   },
   {
-    question: 'In "The Great Gatsby," what does Gatsby dream about?',
-    options: ['Winning back his lost love', 'Becoming a scientist', 'Moving to Europe', 'Joining the military'],
-    correct: 0,
+    question: 'How many players are on a basketball team on the court?',
+    options: ['6', '8', '5', '7'],
+    correct: 2,
     difficulty: 1
   },
   {
-    question: 'Which American leader spoke about having a "dream" for the future?',
-    options: ['Martin Luther King Jr.', 'Abraham Lincoln', 'George Washington', 'Thomas Jefferson'],
-    correct: 0,
+    question: 'Which NFL team has won the most Super Bowls?',
+    options: ['Pittsburgh Steelers', 'New England Patriots', 'Dallas Cowboys', 'Green Bay Packers'],
+    correct: 1,
     difficulty: 1
   },
   {
-    question: 'What does "self-made" mean in the American Dream?',
-    options: ['Succeeding through your own hard work', 'Making your own clothes', 'Building your own house', 'Creating your own business from nothing'],
-    correct: 0,
+    question: 'In which year did Michael Jordan retire from the Chicago Bulls?',
+    options: ['1991', '1998', '1999', '2001'],
+    correct: 2,
     difficulty: 1
   },
   {
-    question: 'Which of these is a real opportunity in the American Dream?',
-    options: ['Attending school and getting an education', 'Waiting for success to come', 'Avoiding hard work', 'Ignoring new skills'],
-    correct: 0,
+    question: 'What is the maximum break in snooker?',
+    options: ['120', '180', '147', '150'],
+    correct: 2,
     difficulty: 1
   },
 
   // ===== MEDIUM MODE (Questions 11-20) =====
   {
-    question: 'James Truslow Adams popularized the phrase "American Dream" in which book?',
-    options: ['The Epic of America', 'The Wealth of Nations', 'Democracy in America', 'The American Spirit'],
-    correct: 0,
+    question: 'Which country hosted the 2020 Summer Olympics?',
+    options: ['China', 'Brazil', 'Japan', 'South Korea'],
+    correct: 2,
     difficulty: 2
   },
   {
-    question: 'What act of 1862 offered land to settlers who would develop it?',
-    options: ['Homestead Act', 'Civil Rights Act', 'Land Grant Act', 'Expansion Doctrine'],
-    correct: 0,
+    question: 'How many times has Serena Williams won Wimbledon?',
+    options: ['5', '7', '8', '9'],
+    correct: 1,
     difficulty: 2
   },
   {
-    question: 'The 1944 GI Bill primarily helped which group achieve the American Dream?',
-    options: ['Returning military veterans', 'Factory workers', 'Immigrants', 'Farmers'],
-    correct: 0,
+    question: 'What is the prize money for winning the FIFA World Cup?',
+    options: ['$10 million', '$30 million', '$42 million', '$50 million'],
+    correct: 2,
     difficulty: 2
   },
   {
-    question: 'What was "redlining" in American housing policy?',
-    options: ['Restricting access to mortgages in certain neighborhoods', 'Painting houses with red lines', 'Creating neighborhood organizations', 'Offering special discounts'],
-    correct: 0,
+    question: 'Which boxer is known as "The Greatest"?',
+    options: ['Joe Frazier', 'Muhammad Ali', 'Mike Tyson', 'Floyd Mayweather'],
+    correct: 1,
     difficulty: 2
   },
   {
-    question: 'Which movement of the 20th century involved millions of Black Americans relocating?',
-    options: ['The Great Migration', 'The Gold Rush', 'The California Dream', 'The Industrial Revolution'],
-    correct: 0,
+    question: 'In Formula 1, which team has won the most constructors championships?',
+    options: ['Ferrari', 'Mercedes', 'McLaren', 'Red Bull'],
+    correct: 1,
     difficulty: 2
   },
   {
-    question: 'What is "meritocracy"?',
-    options: ['Rewards based on ability and achievement', 'Wealth passed from parents to children', 'Government control of businesses', 'A type of government'],
-    correct: 0,
+    question: 'How many holes are there in a standard golf course?',
+    options: ['9', '18', '27', '36'],
+    correct: 1,
     difficulty: 2
   },
   {
-    question: 'The Immigration and Nationality Act of 1965 abolished what system?',
-    options: ['National-origins quota system', 'Citizenship requirements', 'Passport regulations', 'Border controls'],
-    correct: 0,
+    question: 'What is the name of the annual cycling race in France?',
+    options: ['Giro d\'Italia', 'Tour de France', 'Vuelta a España', 'Paris-Roubaix'],
+    correct: 1,
     difficulty: 2
   },
   {
-    question: 'In Arthur Miller\'s "Death of a Salesman," what does Willy Loman question?',
-    options: ['Whether success equals self-worth', 'Whether he should move', 'Whether cars are safe', 'Whether cities are better'],
-    correct: 0,
+    question: 'Which swimmer won the most Olympic gold medals of all time?',
+    options: ['Ryan Lochte', 'Michael Phelps', 'Mark Spitz', 'Katie Ledecky'],
+    correct: 1,
     difficulty: 2
   },
   {
-    question: 'What is "intergenerational economic mobility"?',
-    options: ['Change in economic position between parents and children', 'Moving to a different country', 'Changing jobs frequently', 'Inheriting family wealth'],
-    correct: 0,
+    question: 'In basketball, how many points is a three-pointer worth?',
+    options: ['1 point', '2 points', '3 points', '4 points'],
+    correct: 2,
     difficulty: 2
   },
   {
-    question: 'According to Langston Hughes, what happens to a dream deferred?',
-    options: ['It may wither or explode', 'It becomes stronger', 'It disappears forever', 'It returns the next day'],
-    correct: 0,
+    question: 'Which country won the Euro 2020 football championship?',
+    options: ['England', 'Italy', 'Spain', 'France'],
+    correct: 1,
     difficulty: 2
-  },
-
-  // ===== HARDCORE MODE (Questions 21-30) =====
-  {
-    question: '🔥 Which historical factor most directly undermined the promise of the Homestead Act for Black Americans and Indigenous peoples?',
-    options: ['Systemic exclusion from land claims and prior Indigenous dispossession', 'Lack of transportation to western territories', 'Language barriers preventing settlement', 'Absence of agriculture'],
-    correct: 0,
-    difficulty: 3
-  },
-  {
-    question: '🔥 Why did discriminatory practices in mortgage lending (redlining) create persistent generational wealth gaps even after explicit bans?',
-    options: ['Missed decades of home equity accumulation and community investment', 'Affected only individual borrowers temporarily', 'Was completely reversed by the Fair Housing Act', 'Only prevented savings'],
-    correct: 0,
-    difficulty: 3
-  },
-  {
-    question: '🔥 How did Social Security\'s original exclusion of agricultural and domestic workers disproportionately impact opportunity?',
-    options: ['Left millions of workers of color without retirement security', 'Increased factory employment', 'Made education more affordable', 'Encouraged westward migration'],
-    correct: 0,
-    difficulty: 3
-  },
-  {
-    question: '🔥 What paradox did the GI Bill exemplify regarding American opportunity?',
-    options: ['Its benefits were conditioned on local segregation and discrimination', 'It was offered to all veterans equally', 'It eliminated all racial barriers immediately', 'It prevented future education'],
-    correct: 0,
-    difficulty: 3
-  },
-  {
-    question: '🔥 In contemporary debates, why is the relationship between education and debt essential to understanding the American Dream?',
-    options: ['Education investment increasingly requires borrowing that may outweigh economic gains', 'All college graduates become wealthy', 'Student loans have no impact on long-term wealth', 'Everyone can afford college'],
-    correct: 0,
-    difficulty: 3
-  },
-  {
-    question: '🔥 Which structural distinction reveals why "equal opportunity" differs fundamentally from "equal outcomes"?',
-    options: ['Access to chances ≠ where people ultimately end up due to compounding advantages/disadvantages', 'Opportunity and outcomes are identical', 'Only rich people have opportunities', 'Opportunity guarantees success'],
-    correct: 0,
-    difficulty: 3
-  },
-  {
-    question: '🔥 How does mass incarceration specifically undermine the American Dream\'s premise of self-improvement?',
-    options: ['Criminal records create barriers to employment, housing, and civic participation', 'Incarceration has no economic consequences', 'Prison sentences eliminate all debt', 'Convicted individuals easily find jobs'],
-    correct: 0,
-    difficulty: 3
-  },
-  {
-    question: '🔥 What makes the distinction between "income" and "wealth" crucial for analyzing whether the American Dream is achievable?',
-    options: ['Income is temporary earnings; wealth (assets minus debts) provides long-term security and intergenerational transfer', 'Income and wealth are the same thing', 'Wealth comes only from wages', 'Income cannot be invested'],
-    correct: 0,
-    difficulty: 3
-  },
-  {
-    question: '🔥 How did practices like redlining and discriminatory lending simultaneously limit both wealth and opportunity for generations?',
-    options: ['Prevented home ownership (primary wealth vehicle), reduced neighborhood investment, and created cycles of disadvantage', 'Only affected prices temporarily', 'Was reversed by individual effort', 'Increased access to mortgages'],
-    correct: 0,
-    difficulty: 3
-  },
-  {
-    question: '🔥 In the context of the American Dream, why do scholars distinguish between "aspiration" and "actual mobility"?',
-    options: ['Many believe in upward mobility but structural barriers prevent it, revealing gap between ideology and reality', 'All aspirations become reality', 'Actual mobility is guaranteed regardless of effort', 'Aspirations are independent of society'],
-    correct: 0,
-    difficulty: 3
   }
 ];
 
@@ -243,14 +181,14 @@ setQrCode();
 let currentIndex = 0;
 let score = 0;
 let answered = false;
-let scoresByDifficulty = { 1: 0, 2: 0, 3: 0 };
+let scoresByDifficulty = { 1: 0, 2: 0 };
 
 // Start quiz
 function startQuiz() {
   currentIndex = 0;
   score = 0;
   answered = false;
-  scoresByDifficulty = { 1: 0, 2: 0, 3: 0 };
+  scoresByDifficulty = { 1: 0, 2: 0 };
   startScreen.classList.add('hidden');
   resultScreen.classList.add('hidden');
   quizScreen.classList.remove('hidden');
@@ -263,7 +201,7 @@ function renderQuestion() {
   answered = false;
   nextBtn.classList.add('hidden');
 
-  progressEl.textContent = `Question ${currentIndex + 1}/30`;
+  progressEl.textContent = `Question ${currentIndex + 1}/20`;
   scoreEl.textContent = `Score: ${score}`;
 
   questionEl.textContent = currentQuestion.question;
@@ -331,19 +269,19 @@ function showResult() {
   quizScreen.classList.add('hidden');
   resultScreen.classList.remove('hidden');
 
-  resultText.textContent = `You scored ${score} out of 30 points.`;
+  resultText.textContent = `You scored ${score} out of 20 points.`;
 
   let resultMessage = '';
-  if (score >= 25) {
-    resultMessage = 'INCREDIBLE! You\'ve mastered the American Dream! 🏆';
-  } else if (score >= 20) {
-    resultMessage = 'Excellent! You truly understand the American Dream! 🌟';
+  if (score >= 18) {
+    resultMessage = 'Amazing! You\'re a trivia champion! 🏆';
   } else if (score >= 15) {
-    resultMessage = 'Great job! You know a lot about the American Dream! 👏';
-  } else if (score >= 10) {
-    resultMessage = 'Good effort! You\'re learning the way! 💪';
+    resultMessage = 'Excellent! You really know your stuff! 🌟';
+  } else if (score >= 12) {
+    resultMessage = 'Great job! Pretty impressive knowledge! 👏';
+  } else if (score >= 9) {
+    resultMessage = 'Good effort! Not bad at all! 💪';
   } else {
-    resultMessage = 'Keep learning! The journey is the real American Dream! 🚀';
+    resultMessage = 'Nice try! Better luck next time! 🎯';
   }
 
   resultTitle.textContent = resultMessage;
@@ -352,16 +290,12 @@ function showResult() {
   resultBreakdown.innerHTML = `
     <div class="score-breakdown">
       <div class="breakdown-item">
-        <span class="difficulty-badge easy-badge">Easy Mode</span>
+        <span class="difficulty-badge easy-badge">Easy Questions</span>
         <span class="breakdown-score">${scoresByDifficulty[1]}/10</span>
       </div>
       <div class="breakdown-item">
-        <span class="difficulty-badge medium-badge">Medium Challenge</span>
+        <span class="difficulty-badge medium-badge">Medium Questions</span>
         <span class="breakdown-score">${scoresByDifficulty[2]}/10</span>
-      </div>
-      <div class="breakdown-item">
-        <span class="difficulty-badge hardcore-badge-result">Hardcore Mode 🔥</span>
-        <span class="breakdown-score">${scoresByDifficulty[3]}/10</span>
       </div>
     </div>
   `;
@@ -371,3 +305,4 @@ function showResult() {
 if (startBtn) startBtn.addEventListener('click', startQuiz);
 if (nextBtn) nextBtn.addEventListener('click', nextQuestion);
 if (restartBtn) restartBtn.addEventListener('click', startQuiz);
+

@@ -264,7 +264,7 @@ function showResult() {
   if (score >= 18) {
     resultMessage = 'Amazing! You nailed the American Dream quiz! 🏆';
   } else if (score >= 15) {
-    resultMessage = 'Excellent! You know your stuff! 🌟';
+    resultMessage = 'Excellent! You know your stuff! ⭐';
   } else if (score >= 12) {
     resultMessage = 'Great job! Nice one! 👏';
   } else if (score >= 9) {

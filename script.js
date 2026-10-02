@@ -3,125 +3,125 @@
 const questions = [
   // ===== EASY MODE (Questions 1-10) =====
   {
-    question: 'Who is the highest paid athlete in America right now?',
-    options: ['Lionel Messi', 'Cristiano Ronaldo', 'Patrick Mahomes', 'Tom Brady'],
-    correct: 2,
+    question: 'What country is most closely connected with the American Dream?',
+    options: ['United States', 'Canada', 'Mexico', 'France'],
+    correct: 0,
     difficulty: 1
   },
   {
-    question: 'Which country has won the most FIFA World Cups?',
-    options: ['Germany', 'Brazil', 'France', 'Italy'],
-    correct: 1,
+    question: 'Which of these is a symbol of the American Dream?',
+    options: ['Owning a home', 'Taking a nap', 'Watching TV all day', 'Skipping school'],
+    correct: 0,
     difficulty: 1
   },
   {
-    question: 'What sport is LeBron James famous for?',
-    options: ['Football', 'Baseball', 'Basketball', 'Tennis'],
-    correct: 2,
+    question: 'What does the American Dream usually mean?',
+    options: ['A chance to build a better life', 'Winning the lottery', 'Never working again', 'Living in a castle'],
+    correct: 0,
     difficulty: 1
   },
   {
-    question: 'How many Super Bowls has Tom Brady won?',
-    options: ['5', '7', '6', '8'],
-    correct: 1,
+    question: 'What does "self-made" usually mean?',
+    options: ['You made your success through hard work', 'You were born rich', 'You got everything free', 'You never had to try'],
+    correct: 0,
     difficulty: 1
   },
   {
-    question: 'Which tennis player has won the most Grand Slam titles?',
-    options: ['Roger Federer', 'Novak Djokovic', 'Margaret Court', 'Rafael Nadal'],
-    correct: 1,
+    question: 'Who gave the famous "I Have a Dream" speech?',
+    options: ['Martin Luther King Jr.', 'Abraham Lincoln', 'Steve Jobs', 'Tom Hanks'],
+    correct: 0,
     difficulty: 1
   },
   {
-    question: 'What is the national sport of Japan?',
-    options: ['Soccer', 'Sumo wrestling', 'Tennis', 'Badminton'],
-    correct: 1,
+    question: 'Which of these is part of the American Dream?',
+    options: ['Getting a good job', 'Never leaving home', 'Avoiding all effort', 'Going to bed early every night'],
+    correct: 0,
     difficulty: 1
   },
   {
-    question: 'How many players are on a basketball team on the court?',
-    options: ['6', '8', '5', '7'],
-    correct: 2,
+    question: 'What is one reason many people move to America?',
+    options: ['For more opportunity', 'To avoid all weather', 'To never work', 'To buy a yacht'],
+    correct: 0,
     difficulty: 1
   },
   {
-    question: 'Which NFL team has won the most Super Bowls?',
-    options: ['Pittsburgh Steelers', 'New England Patriots', 'Dallas Cowboys', 'Green Bay Packers'],
-    correct: 1,
+    question: 'What does "opportunity" mean in the American Dream?',
+    options: ['A chance to improve your life', 'A free trip around the world', 'A promise to avoid problems', 'A hidden treasure map'],
+    correct: 0,
     difficulty: 1
   },
   {
-    question: 'In which year did Michael Jordan retire from the Chicago Bulls?',
-    options: ['1991', '1998', '1999', '2001'],
-    correct: 2,
+    question: 'Which of these is NOT part of the traditional American Dream?',
+    options: ['Living in poverty forever', 'Having a successful career', 'Owning a home', 'Raising a family'],
+    correct: 0,
     difficulty: 1
   },
   {
-    question: 'What is the maximum break in snooker?',
-    options: ['120', '180', '147', '150'],
-    correct: 2,
+    question: 'What is something people often hope for in the American Dream?',
+    options: ['A better future for themselves and their family', 'No responsibilities at all', 'A free house forever', 'An endless vacation'],
+    correct: 0,
     difficulty: 1
   },
 
   // ===== MEDIUM MODE (Questions 11-20) =====
   {
-    question: 'Which country hosted the 2020 Summer Olympics?',
-    options: ['China', 'Brazil', 'Japan', 'South Korea'],
-    correct: 2,
+    question: 'Who wrote The Great Gatsby, a famous American Dream story?',
+    options: ['F. Scott Fitzgerald', 'J.K. Rowling', 'Mark Twain', 'Ernest Hemingway'],
+    correct: 0,
     difficulty: 2
   },
   {
-    question: 'How many times has Serena Williams won Wimbledon?',
-    options: ['5', '7', '8', '9'],
-    correct: 1,
+    question: 'In The Great Gatsby, what does Gatsby dream about?',
+    options: ['Winning back his lost love', 'Becoming a famous singer', 'Going to space', 'Opening a bakery'],
+    correct: 0,
     difficulty: 2
   },
   {
-    question: 'What is the prize money for winning the FIFA World Cup?',
-    options: ['$10 million', '$30 million', '$42 million', '$50 million'],
-    correct: 2,
+    question: 'What does success often mean in the American Dream?',
+    options: ['Doing well and building a stable life', 'Never making mistakes', 'Being famous overnight', 'Having a huge mansion only'],
+    correct: 0,
     difficulty: 2
   },
   {
-    question: 'Which boxer is known as "The Greatest"?',
-    options: ['Joe Frazier', 'Muhammad Ali', 'Mike Tyson', 'Floyd Mayweather'],
-    correct: 1,
+    question: 'What does education usually help people do in the American Dream?',
+    options: ['Get better opportunities', 'Sleep more', 'Skip work forever', 'Avoid all responsibilities'],
+    correct: 0,
     difficulty: 2
   },
   {
-    question: 'In Formula 1, which team has won the most constructors championships?',
-    options: ['Ferrari', 'Mercedes', 'McLaren', 'Red Bull'],
-    correct: 1,
+    question: 'What is one big idea behind the American Dream?',
+    options: ['Anyone can work hard and improve their life', 'Only rich people can succeed', 'Success happens by luck alone', 'You should never try something new'],
+    correct: 0,
     difficulty: 2
   },
   {
-    question: 'How many holes are there in a standard golf course?',
-    options: ['9', '18', '27', '36'],
-    correct: 1,
+    question: 'Which of these is a common goal in the American Dream?',
+    options: ['Having a safe, comfortable life', 'Never paying bills', 'Avoiding all stress', 'Living without goals'],
+    correct: 0,
     difficulty: 2
   },
   {
-    question: 'What is the name of the annual cycling race in France?',
-    options: ['Giro d\'Italia', 'Tour de France', 'Vuelta a España', 'Paris-Roubaix'],
-    correct: 1,
+    question: 'What does the word "dream" mean in this quiz?',
+    options: ['A hope for a better future', 'A random idea you forget', 'A movie you watch', 'A dream you have while sleeping'],
+    correct: 0,
     difficulty: 2
   },
   {
-    question: 'Which swimmer won the most Olympic gold medals of all time?',
-    options: ['Ryan Lochte', 'Michael Phelps', 'Mark Spitz', 'Katie Ledecky'],
-    correct: 1,
+    question: 'What is one thing people often want to do to reach the American Dream?',
+    options: ['Work hard and keep trying', 'Give up quickly', 'Avoid learning', 'Stop taking chances'],
+    correct: 0,
     difficulty: 2
   },
   {
-    question: 'In basketball, how many points is a three-pointer worth?',
-    options: ['1 point', '2 points', '3 points', '4 points'],
-    correct: 2,
+    question: 'Which of these best matches the American Dream?',
+    options: ['Building a better life through effort', 'Winning without trying', 'Doing nothing and hoping', 'Getting rich instantly'],
+    correct: 0,
     difficulty: 2
   },
   {
-    question: 'Which country won the Euro 2020 football championship?',
-    options: ['England', 'Italy', 'Spain', 'France'],
-    correct: 1,
+    question: 'What does a person usually need to succeed in the American Dream?',
+    options: ['Hard work, hope, and opportunity', 'Only money from family', 'A perfect life from the start', 'No effort at all'],
+    correct: 0,
     difficulty: 2
   }
 ];
@@ -143,19 +143,16 @@ const qrCode = document.getElementById('qr-code');
 const copyLinkBtn = document.getElementById('copy-link-btn');
 const resultBreakdown = document.getElementById('result-breakdown');
 
-// Get current URL for QR code
 function buildQrUrl(url) {
   return `https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=${encodeURIComponent(url)}`;
 }
 
-// Set QR code on page load
 function setQrCode() {
   if (!qrCode) return;
   const currentUrl = window.location.href || 'https://jojo8989983170921731.github.io/Pub-Quiz/';
   qrCode.src = buildQrUrl(currentUrl);
 }
 
-// Copy link button handler
 if (copyLinkBtn) {
   copyLinkBtn.addEventListener('click', async () => {
     const inviteUrl = window.location.href || 'https://jojo8989983170921731.github.io/Pub-Quiz/';
@@ -174,16 +171,13 @@ if (copyLinkBtn) {
   });
 }
 
-// Initialize QR code
 setQrCode();
 
-// Quiz state
 let currentIndex = 0;
 let score = 0;
 let answered = false;
 let scoresByDifficulty = { 1: 0, 2: 0 };
 
-// Start quiz
 function startQuiz() {
   currentIndex = 0;
   score = 0;
@@ -195,7 +189,6 @@ function startQuiz() {
   renderQuestion();
 }
 
-// Render current question
 function renderQuestion() {
   const currentQuestion = questions[currentIndex];
   answered = false;
@@ -210,7 +203,6 @@ function renderQuestion() {
   const shuffledOptions = currentQuestion.options
     .map((text, index) => ({ text, isCorrect: index === currentQuestion.correct }));
 
-  // Fisher-Yates shuffle
   for (let index = shuffledOptions.length - 1; index > 0; index -= 1) {
     const randomIndex = Math.floor(Math.random() * (index + 1));
     [shuffledOptions[index], shuffledOptions[randomIndex]] = [shuffledOptions[randomIndex], shuffledOptions[index]];
@@ -227,7 +219,6 @@ function renderQuestion() {
   });
 }
 
-// Handle answer selection
 function handleAnswer(selectedIndex) {
   if (answered) return;
   answered = true;
@@ -254,7 +245,6 @@ function handleAnswer(selectedIndex) {
   nextBtn.classList.remove('hidden');
 }
 
-// Go to next question
 function nextQuestion() {
   if (currentIndex < questions.length - 1) {
     currentIndex += 1;
@@ -264,7 +254,6 @@ function nextQuestion() {
   }
 }
 
-// Show final result
 function showResult() {
   quizScreen.classList.add('hidden');
   resultScreen.classList.remove('hidden');
@@ -273,20 +262,19 @@ function showResult() {
 
   let resultMessage = '';
   if (score >= 18) {
-    resultMessage = 'Amazing! You\'re a trivia champion! 🏆';
+    resultMessage = 'Amazing! You nailed the American Dream quiz! 🏆';
   } else if (score >= 15) {
-    resultMessage = 'Excellent! You really know your stuff! 🌟';
+    resultMessage = 'Excellent! You know your stuff! 🌟';
   } else if (score >= 12) {
-    resultMessage = 'Great job! Pretty impressive knowledge! 👏';
+    resultMessage = 'Great job! Nice one! 👏';
   } else if (score >= 9) {
-    resultMessage = 'Good effort! Not bad at all! 💪';
+    resultMessage = 'Good effort! You’re getting there! 💪';
   } else {
-    resultMessage = 'Nice try! Better luck next time! 🎯';
+    resultMessage = 'Nice try! Keep learning and come back! 🚀';
   }
 
   resultTitle.textContent = resultMessage;
 
-  // Show breakdown by difficulty
   resultBreakdown.innerHTML = `
     <div class="score-breakdown">
       <div class="breakdown-item">
@@ -301,7 +289,6 @@ function showResult() {
   `;
 }
 
-// Event listeners
 if (startBtn) startBtn.addEventListener('click', startQuiz);
 if (nextBtn) nextBtn.addEventListener('click', nextQuestion);
 if (restartBtn) restartBtn.addEventListener('click', startQuiz);
